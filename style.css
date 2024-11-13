@@ -1,0 +1,660 @@
+body{
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    background: linear-gradient(280deg, rgb(6, 102, 30), rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+
+.logo{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(3, 26, 0);
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(129, 13, 13);
+}
+
+
+.continue-button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: linear-gradient(150deg, #00a300, #d9534f, #ffffff);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover{
+    color: white;
+    background: linear-gradient(150deg, #000000, #04c41d);
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+ }
+
+ 
+ button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.container-log {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 100px;
+}
+
+
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+  /* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+  /* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.9s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+    display: block;
+    float: none;
+    }
+    .cancelbtn {
+    width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 15px 30px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+
+.logo1 img{
+    width: 40px;
+    height: 40px;
+    margin-left: -350px;
+}
+.logo1 p{
+    margin-left: -300px;
+    margin-top: -37px;
+    font-weight: bold;
+    background-image: radial-gradient(circle, #00a300, #d9534f, #940404);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbar1 ul{
+    background: linear-gradient(100deg, red, white);
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    font-size:13px;
+    font-weight: 600;
+}
+
+.navbar1 ul li a{
+    color: rgb(61, 59, 59);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar1 ul li:hover{
+    color: #0aff53;
+}
+.navbar1 ul li a:hover{
+    color: #0aff53;
+}
+
+
+
+
+
+
+/*home2-container*/
+.container1{
+    margin-top: 0;
+    padding: 0 40px 0 40px;
+    display: flex;
+    gap: 5rem;
+    height: 85.6vh;
+}
+
+.side-menu{
+    border-radius: 0 50px 0 50px;
+    max-width: 300px;
+    width: 100%;
+    background: linear-gradient(190deg, rgb(3, 68, 3), rgb(122, 117, 117));
+    text-align: left;
+    height: 400px;
+}
+
+
+.side-menu ul{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+.side-menu ul li{
+
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.side-menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.active, .side-menu ul li:hover{
+    background: rgb(138, 12, 8);
+    border-radius: 3px;
+}
+
+
+.side-menu, .bx{
+    margin-right: 8px;
+}
+
+.sub-menu-ab{
+    display: none;
+}
+
+.side-menu ul li:hover .sub-menu-ab{
+    display: block;
+    position: absolute;
+    background: linear-gradient(190deg, rgb(3, 68, 3), rgb(122, 117, 117));
+    margin-left: 90px;
+    margin-top: -10px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.side-menu ul li:hover .sub-menu-ab ul{
+    display: block;
+    margin: 10px;
+}
+
+.side-menu ul li:hover .sub-menu-ab ul li{
+    width: 100px;
+    padding: 8px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+.side-menu ul li:hover .sub-menu-ab ul li:last-child{
+    border-bottom: none;
+}
+
+.side-menu ul li:hover .sub-menu-ab ul li a:hover{
+    color: rgb(138, 14, 14);
+}
+
+.bx-right-arrow-alt{
+    float: right;
+}
+
+.bxs-chevrons-right{
+    float: right;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    height: 90%;
+    width: 90%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(190deg, rgb(3, 68, 3), rgb(122, 117, 117));
+    margin-left: -25px;
+    margin-top: 5px;
+    border-radius: 0 15px 15px 15px;
+}
+
+
+
+
+
+
+
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel{
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(156, 83, 83), rgb(75, 131, 75));
+    width: 100%;
+    padding: 20px;
+}
+
+.carousel-item{
+    background: linear-gradient(90deg, rgb(156, 83, 83), rgb(75, 131, 75));
+    position: relative;
+}
+
+.carousel-item h3{
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.carousel-item img{
+    padding: 15px;
+    width: 100%;
+    height: 500px;
+    display: block;
+    border-radius: 25px;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+
+
+
+.caption{
+    border-radius: 10px 30px 10px 30px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.caption p{
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: lightseagreen;
+}
+
+.caption p span{
+    color: rgb(201, 206, 201);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.carousel-item h1{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(120deg, rgb(57, 99, 57), rgb(5, 5, 5));
+    color: rgb(241, 234, 234);
+}
+
+.carousel-item:hover .caption{
+    opacity: 1;
+}
+
+
+
+
+
+.events-card {
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.event-info {
+    text-align: center;
+}
+
+.event-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: radial-gradient(circle, #00a300, #d9534f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.event-info p {
+    color: #666;
+}
+
+
+
+
+
+
+
+.Programmes-cont{
+    padding: 0 50px 0 50px;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 85.6vh;
+}
+
+.sideA{
+    width: 30%;
+    border-radius: 10PX;
+}
+
+.sideA h2{
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 2rem;
+    background-image: linear-gradient(135deg, #0a8d0a, #d9534f);
+}
+
+.d-card{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(42, 70, 42);
+}
+
+.d-card h3{
+    text-align: center;
+    background-color: rgb(8, 39, 2);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.d-card h4{
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 39, 2);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.d-card ul{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.req{
+    color: rgb(206, 199, 199);
+}
+
+.d-card h4 ul li{
+    font-size: 15px;
+    font-weight: 600;
+    list-style-type: none;
+}
+
+
+ul .req li{
+    text-decoration: none;
+    list-style-type: square;
+}
+
+.sideB{
+    width: 30%;
+    border-radius: 10PX;
+}
+
+.sideB h2{
+    text-align: center;
+    background-image: linear-gradient(135deg, #bd0b0b, #fff2f2);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dip-card{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(105, 109, 105);
+}
+
+.dip-card h3{
+    color: rgb(136, 130, 130);
+    text-align: center;
+    background-color: rgb(35, 37, 35);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dip-card h4{
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 39, 2);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.dip-card ul{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+.sideC{
+    width: 30%;
+    border-radius: 10PX;
+}
+.sideC h2{
+    text-align: center;
+    background-image: linear-gradient(135deg, #b4b8b4, #33b90a);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cert-card{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(94, 173, 94);
+}
+
+.cert-card h3{
+    color: rgb(16, 82, 16);
+    text-align: center;
+    background-color: rgb(73, 14, 14);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cert-card h4{
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 39, 2);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.cert-card ul{
+    font-size: 15px;
+    font-weight: 600;
+}
